@@ -1,5 +1,6 @@
 package com.company;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,9 +14,13 @@ public class Main {
 //        g.solution("17");
 //        g.solution("011");
 
-        MenuReconfiguration m = new MenuReconfiguration();
-        //m.solution(new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"}, new int[] {2,3,4});
-        //m.solution(new String[]{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"}, new int[] {2, 3, 5});
-        m.solution(new String[]{"XYZ", "XWY", "WXA"}, new int[] {2, 3, 4});
+//        MenuReconfiguration m = new MenuReconfiguration();
+//        m.solution(new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"}, new int[] {2,3,4});
+//        m.solution(new String[]{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"}, new int[] {2, 3, 5});
+//        m.solution(new String[]{"XYZ", "XWY", "WXA"}, new int[] {2, 3, 4});
+
+        TargetNumber m = new TargetNumber();
+//        m.solution(new int[]{1,1,1,1,1}, 3); // 5
+        m.solution(new int[]{1, 2, 1, 2}, 2); // 3
     }
 }
