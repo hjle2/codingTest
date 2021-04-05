@@ -34,9 +34,12 @@ public class Main {
 //          RightParentheses m = new RightParentheses();
 //          m.solution("()()");
 
-        QuadTree q = new QuadTree();
+//        QuadTree q = new QuadTree();
 
-        int[][] data = new int[][] {{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}};
-        q.solution(data);
+//        int[][] data = new int[][] {{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}};
+        TheBiggestSquare t = new TheBiggestSquare();
+
+        int[][] data = new int[][]{{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}};
+        t.solution(data);
     }
 }
