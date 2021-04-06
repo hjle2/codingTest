@@ -37,9 +37,12 @@ public class Main {
 //        QuadTree q = new QuadTree();
 
 //        int[][] data = new int[][] {{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}};
-        TheBiggestSquare t = new TheBiggestSquare();
+//        TheBiggestSquare t = new TheBiggestSquare();
 
-        int[][] data = new int[][]{{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}};
-        t.solution(data);
+//        int[][] data = new int[][]{{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}};
+        int[][] data = new int[][]{{1,2,3,5}, {5,6,7,8}, {4,3,2,1}};
+
+        EatingLand e = new EatingLand();
+        e.solution(data);
     }
 }
