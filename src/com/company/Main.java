@@ -40,9 +40,12 @@ public class Main {
 //        TheBiggestSquare t = new TheBiggestSquare();
 
 //        int[][] data = new int[][]{{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}};
-        int[][] data = new int[][]{{1,2,3,5}, {5,6,7,8}, {4,3,2,1}};
+//        int[][] data = new int[][]{{1,2,3,5}, {5,6,7,8}, {4,3,2,1}};
 
-        EatingLand e = new EatingLand();
-        e.solution(data);
+//        EatingLand e = new EatingLand();
+//        e.solution(data);
+
+        CollectStickers c = new CollectStickers();
+        c.solution(new int[] {1,1,1,100,1,1,1,100,1,1,1,100});
     }
 }
