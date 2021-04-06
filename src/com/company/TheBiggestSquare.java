@@ -7,24 +7,36 @@ public class TheBiggestSquare {
     public int solution(int [][]board)
     {
         int answer = 0;
-
         // 정사각형의 최대 크기
         int len = Math.min(board.length, board[0].length);
+//        answer = FindBiggestSqure(board, len);
 
-
-        answer = FindBiggestSqure(board, len);
-        return answer;
+        return FindBiggestSqure(board);
     }
+    public int FindBiggestSqure(int[][] board)
+    {
+        int result = 0;
+        for (int i=1; i < board.length; i++) {
+            for (int j=1; j<board[0].length; j++) {
+                if (board[i][j] == 0)
+                    continue;
 
+                board[i][j] = Math.min(Math.min(board[i][j-1], board[i-1][j]), board[i-1][j-1]) + 1;
+                result = Math.max(result, board[i][j]);
+            }
+        }
+        return result;
+    }
+    // DP 알고리즘을 사용해야 효용성 문제를 풀 수 있음.
     public int FindBiggestSqure(int[][] board, int r) {
         if (r == 1) {
-            if (isFullZero(board)) return 0;
-            else return 1;
+            return 1;
         }
         else {
             // 정사각형의 변의 길이
             for (int i=0; i<= board.length-r; i++) {
                 for (int j=0; j<=board[0].length-r; j++) {
+                    if (board[i][j] == 0) continue;
                     if (isFullOne(i, j, r, board))
                         return r*r;
                 }
@@ -33,7 +45,6 @@ public class TheBiggestSquare {
         }
     }
     public boolean isFullOne(int ii, int jj, int n, int[][] board) {
-
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 if (board[ii+i][jj+j] == 0)
