@@ -45,7 +45,9 @@ public class Main {
 //        EatingLand e = new EatingLand();
 //        e.solution(data);
 
-        CollectStickers c = new CollectStickers();
-        c.solution(new int[] {1,1,1,100,1,1,1,100,1,1,1,100});
+//        CollectStickers c = new CollectStickers();
+//        c.solution(new int[] {1,1,1,100,1,1,1,100,1,1,1,100});
+        WordsPuzzle w = new WordsPuzzle();
+        w.solution(new String[] {"app","ap","p","l","e","ple","pp"}, "apple");
     }
 }
