@@ -2,6 +2,7 @@ package com.company;
 
 
 import com.company.DFS_BFS.Network;
+import com.company.DFS_BFS.WordTrans;
 
 public class Main {
 
@@ -51,8 +52,11 @@ public class Main {
 //        c.solution(new int[] {1,1,1,100,1,1,1,100,1,1,1,100});
 //        WordsPuzzle w = new WordsPuzzle();
 //        w.solution(new String[] {"app","ap","p","l","e","ple","pp"}, "apple");
-        Network n = new Network();
-        int[][] data = {{1,1,0},  {1,1,0}, {0,0,1}};
-        n.solution(3, data);
+//        Network n = new Network();
+//        int[][] data = {{1,1,0},  {1,1,0}, {0,0,1}};
+//        n.solution(3, data);
+
+        WordTrans w = new WordTrans();
+        w.solution("hit", "cog", new String[] {"hot", "dot", "dog", "lot", "log", "cog"});// 4
     }
 }
