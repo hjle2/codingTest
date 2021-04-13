@@ -1,6 +1,8 @@
 package com.company;
 
 
+import com.company.DFS_BFS.Network;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -47,7 +49,10 @@ public class Main {
 
 //        CollectStickers c = new CollectStickers();
 //        c.solution(new int[] {1,1,1,100,1,1,1,100,1,1,1,100});
-        WordsPuzzle w = new WordsPuzzle();
-        w.solution(new String[] {"app","ap","p","l","e","ple","pp"}, "apple");
+//        WordsPuzzle w = new WordsPuzzle();
+//        w.solution(new String[] {"app","ap","p","l","e","ple","pp"}, "apple");
+        Network n = new Network();
+        int[][] data = {{1,1,0},  {1,1,0}, {0,0,1}};
+        n.solution(3, data);
     }
 }
