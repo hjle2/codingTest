@@ -4,6 +4,7 @@ package com.company;
 import com.company.DFS_BFS.Network;
 import com.company.DFS_BFS.TravelRoute;
 import com.company.DFS_BFS.WordTrans;
+import com.company.DP.ExpressionInN;
 
 public class Main {
 
@@ -60,10 +61,13 @@ public class Main {
 //        WordTrans w = new WordTrans();
 //        w.solution("hit", "cog", new String[] {"hot", "dot", "dog", "lot", "log", "cog"});// 4
 
-        TravelRoute t = new TravelRoute();
-        String[][] data = {{"ICN", "B"}, {"B", "ICN"}, {"ICN", "A"}, {"A", "D"}, {"D", "A"}};
+//        TravelRoute t = new TravelRoute();
+//        String[][] data = {{"ICN", "B"}, {"B", "ICN"}, {"ICN", "A"}, {"A", "D"}, {"D", "A"}};
 //        String[][] data = 	{{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
 //        String[][] data = 	{{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
-        t.solution(data); // "ICN", "JFK", "HND", "IAD"
+//        t.solution(data); // "ICN", "JFK", "HND", "IAD"
+
+        ExpressionInN e = new ExpressionInN();
+        e.solution(5, 12);
     }
 }
