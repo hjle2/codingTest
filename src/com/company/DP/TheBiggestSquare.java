@@ -1,4 +1,4 @@
-package com.company;
+package com.company.DP;
 
 public class TheBiggestSquare {
     // 1과 0으로 채워진 표

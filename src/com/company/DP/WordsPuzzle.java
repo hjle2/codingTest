@@ -1,4 +1,4 @@
-package com.company;
+package com.company.DP;
 
 public class WordsPuzzle {
     int[] dp;

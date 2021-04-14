@@ -5,6 +5,7 @@ import com.company.DFS_BFS.Network;
 import com.company.DFS_BFS.TravelRoute;
 import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
+import com.company.DP.IntegerTriangle;
 
 public class Main {
 
@@ -67,7 +68,11 @@ public class Main {
 //        String[][] data = 	{{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
 //        t.solution(data); // "ICN", "JFK", "HND", "IAD"
 
-        ExpressionInN e = new ExpressionInN();
-        e.solution(5, 12);
+//        ExpressionInN e = new ExpressionInN();
+//        e.solution(5, 12); // 4
+
+        IntegerTriangle i = new IntegerTriangle();
+        int[][] data = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
+        i.solution(data); // 30
     }
 }
