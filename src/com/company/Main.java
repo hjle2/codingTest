@@ -62,6 +62,8 @@ public class Main {
 
         TravelRoute t = new TravelRoute();
         String[][] data = {{"ICN", "B"}, {"B", "ICN"}, {"ICN", "A"}, {"A", "D"}, {"D", "A"}};
+//        String[][] data = 	{{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
+//        String[][] data = 	{{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
         t.solution(data); // "ICN", "JFK", "HND", "IAD"
     }
 }
