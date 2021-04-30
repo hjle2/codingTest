@@ -71,8 +71,13 @@ public class Main {
 //        ExpressionInN e = new ExpressionInN();
 //        e.solution(5, 12); // 4
 
-        IntegerTriangle i = new IntegerTriangle();
-        int[][] data = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
-        i.solution(data); // 30
+//        IntegerTriangle i = new IntegerTriangle();
+//        int[][] data = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
+//        i.solution(data); // 30
+
+        NextBiggerNumber number = new NextBiggerNumber();
+        number.solution(78); // 83
+        number.solution(15); // 23
+        number.solution(6); // 9
     }
 }
