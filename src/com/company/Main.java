@@ -6,6 +6,7 @@ import com.company.DFS_BFS.TravelRoute;
 import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
 import com.company.DP.IntegerTriangle;
+import com.company.KAKAOBLIND2018.SortFiles;
 
 public class Main {
 
@@ -75,9 +76,13 @@ public class Main {
 //        int[][] data = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
 //        i.solution(data); // 30
 
-        NextBiggerNumber number = new NextBiggerNumber();
-        number.solution(78); // 83
-        number.solution(15); // 23
-        number.solution(6); // 9
+//        NextBiggerNumber number = new NextBiggerNumber();
+//        number.solution(78); // 83
+//        number.solution(15); // 23
+//        number.solution(6); // 9
+
+        SortFiles sortFiles = new SortFiles();
+        sortFiles.solution(new String[]{"img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"});
+        // ["img1.png", "IMG01.GIF", "img02.png", "img2.JPG", "img10.png", "img12.png"]
     }
 }
