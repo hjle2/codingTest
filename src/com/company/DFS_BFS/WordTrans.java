@@ -13,7 +13,7 @@ public class WordTrans {
         cnt = 0;
         wordss = words;
         // words 안에 target 없음.
-        if (!Arrays.stream(words).toList().contains(target)) return 0;
+//        if (!Arrays.stream(words).toList().contains(target)) return 0;
 
         WordTrans(begin, target, words, cnt);
 
