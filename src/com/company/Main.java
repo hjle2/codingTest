@@ -7,6 +7,7 @@ import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
 import com.company.DP.IntegerTriangle;
 import com.company.KAKAOBLIND2018.SortFiles;
+import com.company.Level2.CreateMinimumValue;
 import com.company.Level2.Fibonacci;
 import com.company.SixShop.Num2;
 //import com.company.SixShop.Num4;
@@ -96,7 +97,9 @@ public class Main {
 //        num2.solution(new int[] {2,2,1}); // 1,1,3
 //        Num4 num4 = new Num4();
 //        num4.solution(4, new int[] {4,2,2,5,3}); // 2,3,1,5,4
-        Fibonacci fibonacci = new Fibonacci();
-        System.out.println(fibonacci.solution(100000)); // 2
+//        Fibonacci fibonacci = new Fibonacci();
+//        System.out.println(fibonacci.solution(100000)); // 2
+        CreateMinimumValue createMinimumValue = new CreateMinimumValue();
+        createMinimumValue.solution(new int[] {1,4,2}, new int[] {5,4,4}); // 29
     }
 }
