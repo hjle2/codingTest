@@ -109,7 +109,10 @@ public class Main {
 //        LCMofN lcMofN = new LCMofN();
 //        lcMofN.solution(new int[]{2,6,8,14}); // 168
 
-        WordChainPlay wordChainPlay = new WordChainPlay();
-        wordChainPlay.solution(3, new String[] {"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"}); // 3,3
+//        WordChainPlay wordChainPlay = new WordChainPlay();
+//        wordChainPlay.solution(3, new String[] {"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"}); // 3,3
+
+        JumpAndTeleport jumpAndTeleport = new JumpAndTeleport();
+        jumpAndTeleport.solution(5000);
     }
 }
