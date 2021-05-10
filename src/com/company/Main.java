@@ -7,10 +7,7 @@ import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
 import com.company.DP.IntegerTriangle;
 import com.company.KAKAOBLIND2018.SortFiles;
-import com.company.Level2.CreateMinimumValue;
-import com.company.Level2.Fibonacci;
-import com.company.Level2.LCMofN;
-import com.company.Level2.MultiflyOfMatrix;
+import com.company.Level2.*;
 import com.company.SixShop.Num2;
 //import com.company.SixShop.Num4;
 import com.company.SixShop.ShorterWord;
@@ -109,7 +106,10 @@ public class Main {
 //        int[][] arr2 = {{3,3}, {3,3}};
 //        multiflyOfMatrix.solution(arr1, arr2);
 
-        LCMofN lcMofN = new LCMofN();
-        lcMofN.solution(new int[]{2,6,8,14}); // 168
+//        LCMofN lcMofN = new LCMofN();
+//        lcMofN.solution(new int[]{2,6,8,14}); // 168
+
+        WordChainPlay wordChainPlay = new WordChainPlay();
+        wordChainPlay.solution(3, new String[] {"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"}); // 3,3
     }
 }
