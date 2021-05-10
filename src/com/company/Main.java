@@ -112,7 +112,10 @@ public class Main {
 //        WordChainPlay wordChainPlay = new WordChainPlay();
 //        wordChainPlay.solution(3, new String[] {"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"}); // 3,3
 
-        JumpAndTeleport jumpAndTeleport = new JumpAndTeleport();
-        jumpAndTeleport.solution(5000);
+//        JumpAndTeleport jumpAndTeleport = new JumpAndTeleport();
+//        jumpAndTeleport.solution(5000);
+
+        CorrectParentheses correctParentheses = new CorrectParentheses();
+        correctParentheses.solution("[](){}");
     }
 }
