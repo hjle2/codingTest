@@ -9,6 +9,7 @@ import com.company.DP.IntegerTriangle;
 import com.company.KAKAOBLIND2018.SortFiles;
 import com.company.Level2.CreateMinimumValue;
 import com.company.Level2.Fibonacci;
+import com.company.Level2.MultiflyOfMatrix;
 import com.company.SixShop.Num2;
 //import com.company.SixShop.Num4;
 import com.company.SixShop.ShorterWord;
@@ -99,7 +100,12 @@ public class Main {
 //        num4.solution(4, new int[] {4,2,2,5,3}); // 2,3,1,5,4
 //        Fibonacci fibonacci = new Fibonacci();
 //        System.out.println(fibonacci.solution(100000)); // 2
-        CreateMinimumValue createMinimumValue = new CreateMinimumValue();
-        createMinimumValue.solution(new int[] {1,4,2}, new int[] {5,4,4}); // 29
+//        CreateMinimumValue createMinimumValue = new CreateMinimumValue();
+//        createMinimumValue.solution(new int[] {1,4,2}, new int[] {5,4,4}); // 29
+
+        MultiflyOfMatrix multiflyOfMatrix = new MultiflyOfMatrix();
+        int[][] arr1 = {{1,4}, {3,2}, {4,1}};
+        int[][] arr2 = {{3,3}, {3,3}};
+        multiflyOfMatrix.solution(arr1, arr2);
     }
 }
