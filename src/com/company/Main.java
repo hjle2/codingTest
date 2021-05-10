@@ -9,6 +9,7 @@ import com.company.DP.IntegerTriangle;
 import com.company.KAKAOBLIND2018.SortFiles;
 import com.company.Level2.CreateMinimumValue;
 import com.company.Level2.Fibonacci;
+import com.company.Level2.LCMofN;
 import com.company.Level2.MultiflyOfMatrix;
 import com.company.SixShop.Num2;
 //import com.company.SixShop.Num4;
@@ -103,9 +104,12 @@ public class Main {
 //        CreateMinimumValue createMinimumValue = new CreateMinimumValue();
 //        createMinimumValue.solution(new int[] {1,4,2}, new int[] {5,4,4}); // 29
 
-        MultiflyOfMatrix multiflyOfMatrix = new MultiflyOfMatrix();
-        int[][] arr1 = {{1,4}, {3,2}, {4,1}};
-        int[][] arr2 = {{3,3}, {3,3}};
-        multiflyOfMatrix.solution(arr1, arr2);
+//        MultiflyOfMatrix multiflyOfMatrix = new MultiflyOfMatrix();
+//        int[][] arr1 = {{1,4}, {3,2}, {4,1}};
+//        int[][] arr2 = {{3,3}, {3,3}};
+//        multiflyOfMatrix.solution(arr1, arr2);
+
+        LCMofN lcMofN = new LCMofN();
+        lcMofN.solution(new int[]{2,6,8,14}); // 168
     }
 }
