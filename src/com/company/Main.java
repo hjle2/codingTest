@@ -7,8 +7,9 @@ import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
 import com.company.DP.IntegerTriangle;
 import com.company.KAKAOBLIND2018.SortFiles;
+import com.company.Level2.Fibonacci;
 import com.company.SixShop.Num2;
-import com.company.SixShop.Num4;
+//import com.company.SixShop.Num4;
 import com.company.SixShop.ShorterWord;
 
 public class Main {
@@ -93,7 +94,9 @@ public class Main {
 
 //        Num2 num2 = new Num2();
 //        num2.solution(new int[] {2,2,1}); // 1,1,3
-        Num4 num4 = new Num4();
-        num4.solution(4, new int[] {4,2,2,5,3}); // 2,3,1,5,4
+//        Num4 num4 = new Num4();
+//        num4.solution(4, new int[] {4,2,2,5,3}); // 2,3,1,5,4
+        Fibonacci fibonacci = new Fibonacci();
+        System.out.println(fibonacci.solution(100000)); // 2
     }
 }
