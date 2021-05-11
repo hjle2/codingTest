@@ -115,7 +115,13 @@ public class Main {
 //        JumpAndTeleport jumpAndTeleport = new JumpAndTeleport();
 //        jumpAndTeleport.solution(5000);
 
-        CorrectParentheses correctParentheses = new CorrectParentheses();
-        correctParentheses.solution("[](){}");
+//        CorrectParentheses correctParentheses = new CorrectParentheses();
+//        correctParentheses.solution("[](){}");
+//        String ss = "abcde";
+//        System.out.println(ss.substring(0, 1));
+
+        RemoveInPairs removeInPairs = new RemoveInPairs();
+        removeInPairs.solution("baabaa");
     }
+
 }
