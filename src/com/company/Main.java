@@ -120,8 +120,14 @@ public class Main {
 //        String ss = "abcde";
 //        System.out.println(ss.substring(0, 1));
 
-        RemoveInPairs removeInPairs = new RemoveInPairs();
-        removeInPairs.solution("baabaa");
+//        RemoveInPairs removeInPairs = new RemoveInPairs();
+//        removeInPairs.solution("baabaa");
+
+        ShortestDistanceOfGameMap map = new ShortestDistanceOfGameMap();
+//        int[][] data = {{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
+//        int[][] data = {{1,0,0,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
+        int[][] data = {{1,1,1,1,1}};
+        map.solution(data);
     }
 
 }
