@@ -6,6 +6,7 @@ import com.company.DFS_BFS.TravelRoute;
 import com.company.DFS_BFS.WordTrans;
 import com.company.DP.ExpressionInN;
 import com.company.DP.IntegerTriangle;
+import com.company.DevCat.Num1;
 import com.company.KAKAOBLIND2018.SortFiles;
 import com.company.Level2.*;
 import com.company.SixShop.Num2;
@@ -123,12 +124,16 @@ public class Main {
 //        RemoveInPairs removeInPairs = new RemoveInPairs();
 //        removeInPairs.solution("baabaa");
 
-        ShortestDistanceOfGameMap map = new ShortestDistanceOfGameMap();
-//        int[][] data = {{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
-//        int[][] data = {{1,0,0,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
-        int[][] data = {{1,1,1,1,1}};
-//        int[][] data = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,0,1},{1,0,1,0,1},{1,1,1,0,1}};
-        map.solution(data);
+//        ShortestDistanceOfGameMap map = new ShortestDistanceOfGameMap();
+////        int[][] data = {{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
+////        int[][] data = {{1,0,0,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
+//        int[][] data = {{1,1,1,1,1}};
+////        int[][] data = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,0,1},{1,0,1,0,1},{1,1,1,0,1}};
+//        map.solution(data);
+
+        Num1 num1 = new Num1();
+        int[][] data = {{1, 28, 41, 22, 25, 79, 4}, {39, 20, 10, 17, 19, 18, 8}, {21, 4, 13, 12, 9, 29, 19}, {58, 1, 20, 5, 8, 16, 9}, {5, 6, 15, 2, 39, 8, 29}, {39, 7, 17, 5, 4, 49, 5}, {74, 46, 8, 11, 25, 2, 11}};
+        num1.solution(data, 19, 6); // 17
     }
 
 }
