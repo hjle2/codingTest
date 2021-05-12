@@ -47,12 +47,14 @@ public class Num1 {
                 int score = 0;
                 int xx = x;
                 int yy = y;
-                for (int i=1; i<=r/2; i++) {
+                for (int idx=1; idx<=r/2; idx++) {
+                    for (int i=0; i<dx.length; i++) {
+
                     xx = x + dx[i]*i;
                     yy = y + dy[i]*i;
                     if (xx >= 0 && yy >= 0 && xx < maps.length && yy < maps.length) {
 
-                        if (i == r/2) {
+                        if (idx == r/2) {
                             if (maps[yy][xx] <= p/2) {
                                 score++;
                             }
@@ -60,6 +62,7 @@ public class Num1 {
                         else if (maps[yy][xx] <= p) {
                             score++;
                         }
+                    }
                     }
                 }
                 MAX = Math.max(score, MAX);
