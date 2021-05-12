@@ -39,7 +39,7 @@ public class ShortestDistanceOfGameMap {
     }
 
 
-    public int dfs2 (int x, int y, int[][] maps) {
+    public int bfs (int x, int y, int[][] maps) {
         Queue<Node> que = new LinkedList<>();
         que.offer(new Node(x, y, 1));
         visited[x][y] = true;
@@ -101,7 +101,7 @@ public class ShortestDistanceOfGameMap {
         maps = MAP;
         maps[0][0] = 0;
         initVisited();
-        dfs2(0, 0, MAP);
+        bfs(0, 0, MAP);
         return DISTANCE == Integer.MAX_VALUE ? -1 : DISTANCE;
     }
     public class Node {
