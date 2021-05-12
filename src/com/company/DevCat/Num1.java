@@ -18,9 +18,19 @@ package com.company.DevCat;
 // 4 : 12
 // 6 : 18
 // 효용성 없음
-// 0,0 이면, 0.0, 0,1 0,2/2 1,0 1,1/2 2,1/1
+// 1.1 에 있는 것 부터 시작하지..
+// 1.1 이면 maps에서 0.0 0.1 1.0 1.1 얘네 사이에 있는거고
+// 0.0 이면 0.0 만
+// 1.0 이면 1.0, 0.0
+// 0.1 이면 0.0, 0.1
+// 2.2 이면 2.2 를 중심으로 알래로 ..
+
+// 3.3 에서
 public class Num1 {
     int MAX = 0;
+    int[] dx = {0, 0, -1, -1};
+    int[] dy = {0, -1, 0, -1};
+
     public boolean ZeroDie(int[][] maps, int p) {
         for (int i=0; i<maps.length; i++) {
             for (int j=0; j<maps[0].length; j++) {
@@ -31,30 +41,30 @@ public class Num1 {
     }
     public int solution(int[][] maps, int p, int r) {
         if (ZeroDie(maps, p)) return MAX;
-        int answer = -1;
 
         for (int y=1; y<maps.length; y++) {
             for (int x = 1; x < maps[0].length; x++) {
                 int score = 0;
-
+                int xx = x;
+                int yy = y;
                 for (int i=0; i<r/2; i++) {
-                    if (x-i >= 0) {
+                    xx = x + dx[i];
+                    yy = y + dy[i];
+                    if (xx >= 0 && yy >= 0 && xx < maps.length && yy < maps.length) {
 
-                    }
-                    if (x+i < maps[0].length) {
-
-                    }
-                    if (y-i >= 0) {
-
-                    }
-                    if (y+i < maps.length) {
-
+                        if (i == r/2 - 1) {
+                            if (maps[yy][xx] <= p/2) {
+                                score++;
+                            }
+                        }
+                        else if (maps[yy][xx] <= p) {
+                            score++;
+                        }
                     }
                 }
-
-
+                MAX = Math.max(score, MAX);
             }
         }
-        return answer;
+        return MAX;
     }
 }

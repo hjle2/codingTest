@@ -16,7 +16,7 @@ public class Num3 {
         int answer = 0;
 
         for (int i=0; i<blocks.length; i++) {
-            blocks
+//            blocks
         }
         return answer;
     }
