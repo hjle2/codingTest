@@ -47,12 +47,12 @@ public class Num1 {
                 int score = 0;
                 int xx = x;
                 int yy = y;
-                for (int i=0; i<r/2; i++) {
-                    xx = x + dx[i];
-                    yy = y + dy[i];
+                for (int i=1; i<=r/2; i++) {
+                    xx = x + dx[i]*i;
+                    yy = y + dy[i]*i;
                     if (xx >= 0 && yy >= 0 && xx < maps.length && yy < maps.length) {
 
-                        if (i == r/2 - 1) {
+                        if (i == r/2) {
                             if (maps[yy][xx] <= p/2) {
                                 score++;
                             }
