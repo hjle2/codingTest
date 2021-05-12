@@ -13,7 +13,7 @@ public class CreateJadenCaseString {
                 else {
                     answer += String.valueOf(c).toLowerCase();
                 }
-            }d
+            }
             else answer += c;
 
             if (c == ' ') flag = true;
