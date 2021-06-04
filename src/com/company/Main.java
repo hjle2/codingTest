@@ -139,8 +139,11 @@ public class Main {
 //        Cache c = new Cache();
 //        c.solution(3, new String[] {"Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul"});
 
-        Tornement t = new Tornement();
-        t.solution(8, 2, 3);
+//        Tornement t = new Tornement();
+//        t.solution(8, 2, 3);
+
+        DiffBit d = new DiffBit();
+        d.solution(new long[] {2,7});
     }
 
 }
