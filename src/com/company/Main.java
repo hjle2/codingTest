@@ -10,6 +10,7 @@ import com.company.DevCat.Num1;
 import com.company.KAKAOBLIND2018.Cache;
 import com.company.KAKAOBLIND2018.SortFiles;
 import com.company.Level2.*;
+import com.company.Level3.Queen;
 import com.company.SixShop.Num2;
 //import com.company.SixShop.Num4;
 import com.company.SixShop.ShorterWord;
@@ -142,8 +143,10 @@ public class Main {
 //        Tornement t = new Tornement();
 //        t.solution(8, 2, 3);
 
-        DiffBit d = new DiffBit();
-        d.solution(new long[] {2,7});
+//        DiffBit d = new DiffBit();
+//        d.solution(new long[] {2,7});
+        Queen q = new Queen();
+        q.solution(4);
     }
 
 }
